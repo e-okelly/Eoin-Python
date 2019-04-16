@@ -1,4 +1,6 @@
+#Aim of this code is to print todays date
 #First method of printing date involves indexing the date in the print line
+
 import numpy as np
 
 months = np.array(['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep',\
@@ -12,6 +14,7 @@ print(days[1], months[3], ndays[15])
 
 
 #Second method uses the datetime module to automate the process, it will print todays date automatically when run
+
 from datetime import date
 import calendar
 
