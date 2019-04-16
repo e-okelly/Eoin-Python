@@ -1,0 +1,22 @@
+#First method of printing date involves indexing the date in the print line
+import numpy as np
+
+months = np.array(['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep',\
+                   'Oct','Nov','Dec'])
+
+ndays = np.array(range(1,32))
+
+days=np.array(['Mon','Tue','Wed','Thu','Fri','Sat','Sun'])
+
+print(days[1], months[3], ndays[15])
+
+
+#Second method uses the datetime module to automate the process, it will print todays date automatically when run
+from datetime import date
+import calendar
+
+my_date = date.today()
+
+calendar.day_name[my_date.weekday()]
+
+print(my_date)
